@@ -32,7 +32,7 @@ export const Layout = () =>
                     </div>
                     <div className="col-12">
                         <strong>Email:</strong>
-                        <a href="mailto:sakra@movieinfo.com" className="link-light text-decoration-none">sakra@moviesinfo.com</a>
+                        <a href="mailto:sakra@movieinfo.com" className="link-light text-decoration-none">Sakra@moviesinfo.com</a>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,7 @@
-
-export const MovieCard = ({ movie }) => <>
-    <div className="col my-3 movie-card" onClick={() => { }}>
+import { useNavigate } from "react-router-dom"
+export const MovieCard = ({ movie }) => {
+    const navigate = useNavigate()
+    return < div className="col my-3 movie-card" onClick={() => { navigate(`movie/${movie.id}`) }}>
         <div className="row">
             <div className="col-12 rounded-top">
                 <img src={`${import.meta.env.VITE_IMAGE_URL + movie.poster_path}`} className="img-fluid" />
@@ -20,8 +21,7 @@ export const MovieCard = ({ movie }) => <>
                     <i className="fa-solid fa-star me-2"></i>
                     {movie.vote_average}
                 </small>
-
             </div>
         </div>
-    </div>
-</>
+    </div >
+}

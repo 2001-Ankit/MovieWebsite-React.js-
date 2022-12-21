@@ -29,6 +29,18 @@ export const Movie = () => {
                                 <div className="col-12 text-secondary fst-itallic my-3">
                                     {movie.overview}
                                 </div>
+                                <div className="col-12">
+                                    {movie.genres.map(genre => <span className="badge text-bg-success me-2">{genre.name}
+                                    </span>)}
+                                </div>
+                                <div className="col-12 mt-2">
+                                    <small>
+                                        <i className="fa-solid fa-clock me-2"></i>
+                                        {movie.release_date}
+                                        <i className="fa-solid fa-star me-2 ms-3"></i>
+                                        {movie.vote_average}
+                                    </small>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -1,7 +1,7 @@
 import { SiteRoutes } from "./SiteRoutes"
 
 function App() {
-    return <SiteRoutes />
+  return <SiteRoutes />
 }
 
 export default App
